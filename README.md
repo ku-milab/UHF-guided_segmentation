@@ -2,15 +2,11 @@
 
 This is the PyTorch implementation of our preprint paper "Transferring Ultra-high Field Representations for Intensity-Guided Brain Segmentation of Low Field MRI".
 
----
-
-### Architecture
+## Architecture
 
 TBU
 
----
-
-### Requirements
+## Requirements
 
 torch==1.10.1
 
@@ -26,16 +22,13 @@ nilearn==0.8.1
 
 scipy==1.7.3
 
----
-
-### Usage
+## Usage
 
 Command format:
 ```
 python main.py --type <3D / 2D> --mode <all / train / test> --net <T / K / F> --gpu <GPU_NUMBER> \\
---path_dataset_Paired <path to the paired 3T and 7T dataset> --path_dataset_IBSR <path to the IBSR dataset for tissue segmentation> \\
---path_dataset_MALC <path to the MALC dataset for region segmentation> --base <name of the baseline segmentation model> \\
---base_encoder <path to a pre-trained weight file of the segmentation encoder> --base_decoder <path to a pre-trained weight file of the segmentation decoder> \\
+--path_dataset_Paired <path to the paired 3T and 7T dataset> --path_dataset_IBSR <path to the IBSR dataset for tissue segmentation> --path_dataset_MALC <path to the MALC dataset for region segmentation> \\
+--base <name of the baseline segmentation model> --base_encoder <path to a pre-trained weight file of the segmentation encoder> --base_decoder <path to a pre-trained weight file of the segmentation decoder> \\
 --plane <plane for a 2D model: axial / coronal / sagittal>
 ```
 
