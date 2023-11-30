@@ -231,7 +231,7 @@ class Implementation(object):
             fusion = nn.DataParallel(FusionModules(self.args)).to(device)
             fusion.load_state_dict(fusion_dict) 
 
-            path_keeper = f'./{self.typepath_log}_Keeper/model/{fold_name}'
+            path_keeper = f'./{self.type}_Keeper/model/{fold_name}'
             keeper_dict = torch.load(f'{path_keeper}/knowledge_keeper.pth')
             keeper = nn.DataParallel(KnowledgeKeeperNet(self.args)).to(device)
             keeper.load_state_dict(keeper_dict)
