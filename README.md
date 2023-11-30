@@ -44,9 +44,12 @@ python main.py --type 3D --mode train --net T --gpu 1 --path_dataset_Paired /PAT
 python main.py --type 3D --mode train --net F --gpu 1 --path_dataset_IBSR /PATH_IBSR --base UNet --base_encoder /PATH_BASE/UNET_ENCODER.pth --base_decoder /PATH_BASE/UNET_DECODER.pth
 ```
 
+3. For testing the UHF-guided segmentation model trained on the above steps, you can use the following command:
+```
+python main.py --type 3D --mode test --net F --gpu 1 --path_dataset_IBSR /PATH_IBSR --base UNet
+```
 
-3. To implement the above two steps at once, you can use the following command:
+4. To implement all consecutive steps for training and testing at once, you can also use the following command:
 ```
 python main.py --type 3D --mode all --gpu 1 --path_dataset_Paired /PATH_PAIRED --path_dataset_IBSR /PATH_IBSR --base UNet --base_encoder /PATH_BASE/UNET_ENCODER.pth --base_decoder /PATH_BASE/UNET_DECODER.pth
 ```
-   
