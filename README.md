@@ -1,6 +1,6 @@
 # UHF-guided Segmentation
 
-This is the PyTorch implementation of our preprint paper "Transferring Ultra-high Field Representations for Intensity-Guided Brain Segmentation of Low Field MRI".
+This is the PyTorch implementation of our preprint paper _"Transferring Ultra-high Field Representations for Intensity-Guided Brain Segmentation of Low Field MRI"_.
 
 ## Architecture
 
@@ -32,15 +32,18 @@ python main.py --type <3D / 2D> --mode <all / train / test> --net <T / K / F> --
 --plane <plane for a 2D model: axial / coronal / sagittal>
 ```
 
+
 1. For training teacher and knowledge keeper networks for a 3D version, you can use the following command:
 ```
 python main.py --type 3D --mode train --net T --gpu 1 --path_dataset_Paired /PATH_PAIRED && python main.py --type 3D --net K --mode train --gpu 1 --path_dataset_Paired /PATH_PAIRED
 ```
 
+
 2. For training fusion modules by using 3D U-Net as the baseline segmentation model, you can use the following command:
 ```
 python main.py --type 3D --mode train --net F --gpu 1 --path_dataset_IBSR /PATH_IBSR --base UNet --base_encoder /PATH_BASE/UNET_ENCODER.pth --base_decoder /PATH_BASE/UNET_DECODER.pth
 ```
+
 
 3. To implement the above two steps at once, you can use the following command:
 ```
