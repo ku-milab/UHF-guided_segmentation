@@ -2,7 +2,7 @@ import numpy as np
 from skimage.metrics import peak_signal_noise_ratio as cal_psnr
 from skimage.metrics import structural_similarity as cal_ssim
 import torch
-
+ 
 def cal_psnr_ssim_list(real_y_list, pred_y_list, return_total=False):
     total_psnr = np.zeros(len(real_y_list))
     total_ssim = np.zeros(len(real_y_list))
