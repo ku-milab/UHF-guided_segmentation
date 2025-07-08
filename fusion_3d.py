@@ -11,7 +11,6 @@ from data import IBSR, save_nii, segmap_to_onehot
 from metrics import cal_dice_score_list
 from keeper_3d import KnowledgeKeeperNet
 
-
 class Fusion(nn.Module):
     def __init__(self, args, out_c):
         super().__init__()
