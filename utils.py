@@ -2,7 +2,7 @@ import logging
 import torch
 from torch import nn
 import numpy as np
-
+ 
 def logger_setting(file_name):
     logger = logging.getLogger()
     logger.setLevel(logging.DEBUG)
