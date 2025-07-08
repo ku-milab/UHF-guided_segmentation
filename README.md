@@ -5,7 +5,7 @@ This is the PyTorch implementation of our preprint paper _"Transferring Ultra-hi
 ## Architecture
 
 TBU
-
+ 
 ## Requirements
 
 torch==1.10.1
