@@ -13,7 +13,6 @@ from metrics import cal_dice_score_list, cal_dice_score
 from keeper_2d import KnowledgeKeeperNet
 import nibabel as nib
 
-
 class Fusion(nn.Module):
     def __init__(self, args, out_c):
         super().__init__()
