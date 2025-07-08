@@ -1,7 +1,7 @@
 import os
 import argparse
 import torch
-
+ 
 parser = argparse.ArgumentParser()
 parser.add_argument('--type', type=str, default='3D') # 3D / 2D
 parser.add_argument('--mode', type=str, default='all') # all / train / test
