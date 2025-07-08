@@ -6,7 +6,6 @@ from scipy.ndimage.interpolation import affine_transform
 from scipy.ndimage import rotate
 from skimage import exposure
 
-
 def save_nii(arr, path, affine=np.eye(4)):
     nii_img = nib.Nifti1Image(arr, affine=affine)
     nib.save(nii_img, path)
