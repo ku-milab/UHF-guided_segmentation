@@ -1,4 +1,4 @@
-# UHF-guided Segmentation
+# SegUHF
 
 This is the PyTorch implementation of our preprint paper _"Transferring Ultra-high Field Representations for Intensity-Guided Brain Segmentation of Low Field MRI"_.
 
